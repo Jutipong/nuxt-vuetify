@@ -3,11 +3,10 @@ import axios from 'axios'
 
 // const $g = useGlobalStore()
 
-const { baseUrl } = useConstant
 
 // create axios
 const _api = axios.create({
-  baseURL: baseUrl.api,
+  baseURL: _const.baseUrl.api,
   timeout: 5000,
   headers: { 'Access-Control-Allow-Origin': '*' },
 })

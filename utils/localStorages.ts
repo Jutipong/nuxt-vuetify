@@ -1,9 +1,6 @@
 import ls from 'localstorage-slim'
 import type { UserLogin } from '@/types/auth'
 
-const { app } = useConstant
-
-
 export const useLocalStorages = {
   clearLocalStorage: () => {
     ls.config.storage = sessionStorage
@@ -13,23 +10,23 @@ export const useLocalStorages = {
   setToken: (token: string) => {
     ls.config.storage = sessionStorage
     ls.config.encrypt = true
-    ls.set(app.tokenKey, token)
+    ls.set(_const.app.tokenKey, token)
   },
   getToken: (): string | null => {
     ls.config.storage = sessionStorage
     ls.config.encrypt = true
-    const token = ls.get<string | null>(app.tokenKey)
+    const token = ls.get<string | null>(_const.app.tokenKey)
     return token
   },
   setUserLogin: (userInfo: UserLogin) => {
     ls.config.storage = sessionStorage
     ls.config.encrypt = true
-    ls.set(app.userLoginKey, userInfo)
+    ls.set(_const.app.userLoginKey, userInfo)
   },
   getUserLogin: (): UserLogin | null => {
     ls.config.storage = sessionStorage
     ls.config.encrypt = true
-    const userInfo = ls.get<UserLogin | null>(app.userLoginKey)
+    const userInfo = ls.get<UserLogin | null>(_const.app.userLoginKey)
     return userInfo
   },
 }

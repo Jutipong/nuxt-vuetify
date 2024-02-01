@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const authStore = useLoginStore()
 const layoutStore = useLayoutStore()
-const { app } = useConstant
 </script>
 
 <template>
@@ -12,7 +11,7 @@ const { app } = useConstant
     <v-app-bar color="primary" density="compact" scroll-behavior="inverted" scroll-threshold="1000">
       <v-app-bar-nav-icon :icon="layoutStore.state.drawer ? 'mdi-menu-open' : 'mdi-menu-close'" variant="text"
         @click="layoutStore.toggleDrawer" />
-      <v-app-bar-title>{{ app.name }} </v-app-bar-title>
+      <v-app-bar-title>{{ _const.app.name }} </v-app-bar-title>
 
       <template #append>
         <v-btn color="error" prepend-icon="mdi-logout" @click="authStore.logOut()">
