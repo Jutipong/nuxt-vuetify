@@ -14,23 +14,15 @@ export default defineNuxtConfig({
     build: {
       chunkSizeWarningLimit: 1000,
     },
-    ssr: {
-      optimizeDeps: {
-        exclude: ['vuetify'],
-      },
-      noExternal: ["vuetify"]
-    }
   },
   imports: {
     dirs: [
       'stores',
       'utils',
-      'utils/constants'],
+      'utils/constants'
+    ],
   },
-  modules: [
-    "vuetify-nuxt-module",
-    "@pinia/nuxt"
-  ],
+  modules: ["vuetify-nuxt-module", "@pinia/nuxt", 'nuxt-lodash'],
   build: {
     transpile: ['vue-toastification']
   },
