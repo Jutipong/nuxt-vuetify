@@ -16,11 +16,10 @@ export default defineNuxtConfig({
   ],
   vuetify: {
     vuetifyOptions: {
+      icons: {
+        defaultSet: 'mdi',
+      },
       theme: {
-        // defaultTheme: 'LightTheme',
-        themes: {
-          // LightTheme,
-        },
       },
       defaults: {
         VContainer: {
