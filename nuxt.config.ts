@@ -4,7 +4,8 @@
 export default defineNuxtConfig({
   app: {
     keepalive: true,
-    pageTransition: { name: 'page', mode: 'out-in' },
+    pageTransition: false,
+    layoutTransition: false
   },
   devtools: { enabled: true },
   imports: {
@@ -20,6 +21,20 @@ export default defineNuxtConfig({
         defaultSet: 'mdi',
       },
       theme: {
+        themes: {
+          light: {
+            colors: {
+              background: '#E0E0E0',
+              surface: '#fbfbfb',
+              primary: '#5D87FF',
+              secondary: '#8A8D93',
+              error: '#FF4C51',
+              info: '#16B1FF',
+              success: '#4CAF50',
+              warning: '#FB8C00',
+            },
+          },
+        }
       },
       defaults: {
         VContainer: {
