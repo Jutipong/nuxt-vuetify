@@ -2,6 +2,7 @@
     "cSpell.words": [
         "Nuxt",
         "pinia",
+        "toastification",
         "vuetify"
     ],
     "files.exclude": {
