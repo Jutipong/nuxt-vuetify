@@ -3,11 +3,11 @@ import axios from 'axios'
 
 // const $g = useGlobalStore()
 
-// const { baseUrl } = useConstant
+const { baseUrl } = useConstant
 
 // create axios
 const _api = axios.create({
-  baseURL: 'https://dummyjson.com',//baseUrl.api,
+  baseURL: baseUrl.api,
   timeout: 5000,
   headers: { 'Access-Control-Allow-Origin': '*' },
 })

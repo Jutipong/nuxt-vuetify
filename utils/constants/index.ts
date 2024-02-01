@@ -6,7 +6,7 @@ export const useConstant = {
     userLoginKey: 'userLoginKey',
   },
   baseUrl: {
-    api: process.env.API_BaseUrl
+    api: import.meta.env.VITE_API_BaseUrl,
   },
   action: {
     add: 'add',
