@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   vite: {
     build: {
-      chunkSizeWarningLimit: 5000,
+      chunkSizeWarningLimit: 1000,
     },
     ssr: {
       optimizeDeps: {
@@ -19,7 +19,10 @@ export default defineNuxtConfig({
     }
   },
   imports: {
-    dirs: ['stores', 'utils', 'utils/constants'],
+    dirs: [
+      'stores',
+      'utils',
+      'utils/constants'],
   },
   modules: [
     "vuetify-nuxt-module",
