@@ -8,9 +8,8 @@ const $g = useGlobalStore()
     <NuxtLoadingIndicator />
     <NuxtPage :page-key="(route) => route.fullPath" />
 
-
     <!-- util component -->
-    <BaseConfirm />
+    <vConfirm />
     <v-overlay v-model="$g.isLoading" class="align-center justify-center" persistent>
       <v-card>
         <v-card-text class="text-center">
