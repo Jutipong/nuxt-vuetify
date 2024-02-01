@@ -1,5 +1,3 @@
-// import { LightTheme } from "./vuefity/config";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -19,6 +17,7 @@ export default defineNuxtConfig({
       importComposables: true,
     },
     vuetifyOptions: {
+      labComponents: true,
       icons: {
         defaultSet: 'mdi',
       },
