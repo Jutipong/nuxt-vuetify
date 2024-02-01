@@ -1,4 +1,4 @@
-export const useConstant = {
+export const vConstant = {
   app: {
     name: import.meta.env.VITE_APP_NAME,
     titleName: import.meta.env.VITE_APP_TITLE_NAME,

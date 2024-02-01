@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import * as store from '@/stores/hook/vConfirm'
+import * as store from '@/plugins/vConfirm/confirm'
 </script>
 
 <template>
@@ -32,3 +32,4 @@ import * as store from '@/stores/hook/vConfirm'
     </div>
   </teleport>
 </template>
+@/plugins/vConfirm/vConfirm

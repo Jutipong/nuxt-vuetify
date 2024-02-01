@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import vConfirm from "@/plugins/vConfirm/confirm.vue";
 const $g = useGlobalStore()
 </script>
 

@@ -1,5 +1,5 @@
-import { state, init } from '@/stores/hook/vConfirm'
-import type { ConfirmOptions } from '@/stores/hook/vConfirm';
+import { state, init } from '@/plugins/vConfirm/confirm'
+import type { ConfirmOptions } from '@/plugins/vConfirm/confirm';
 
 export const vConfirm = {
   info: (title: string, message: string, options?: ConfirmOptions) => {
