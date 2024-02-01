@@ -5,8 +5,8 @@ const $g = useGlobalStore()
 
 
 <template>
+  <NuxtLoadingIndicator color="#4CAF50" />
   <NuxtLayout>
-    <NuxtLoadingIndicator />
     <NuxtPage :page-key="(route) => route.fullPath" />
 
     <!-- util component -->
