@@ -54,8 +54,5 @@ export default defineNuxtConfig({
         },
       },
     },
-    moduleOptions: {
-      useVuetifyLabs: true,
-    },
   },
 })
