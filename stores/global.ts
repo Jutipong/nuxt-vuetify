@@ -1,4 +1,4 @@
-import { acceptHMRUpdate, defineStore } from 'pinia'
+import { defineStore } from 'pinia'
 
 export const useGlobalStore = defineStore('global', () => {
   const loadings = ref(0)

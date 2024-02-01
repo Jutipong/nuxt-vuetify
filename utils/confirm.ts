@@ -21,9 +21,9 @@ const state = reactive({
   isOpen: false,
   message: '',
   title: '',
-  resolve: (_val: boolean) => {},
-  reject: (_val: boolean) => {},
-  options: { } as ConfirmOptions,
+  resolve: (_val: boolean) => { },
+  reject: (_val: boolean) => { },
+  options: {} as ConfirmOptions,
 })
 
 function reset() {
@@ -63,6 +63,9 @@ export default {
 // ===========================================
 export const vConfirm = {
   info: (title: string, message: string, options?: ConfirmOptions) => {
+
+    debugger;
+
     const op = Object.assign({
       btnOk: {
         text: 'Yes',
@@ -74,6 +77,8 @@ export const vConfirm = {
       },
     } as ConfirmOptions, options)
 
+    debugger;
+
     init(title, message, op)
 
     return new Promise<boolean>((resolve, reject) => {
@@ -82,6 +87,9 @@ export const vConfirm = {
     })
   },
   save: (title: string, message: string, options?: ConfirmOptions) => {
+
+    debugger;
+
     const op = Object.assign({
       iconTitle: 'mdi-content-save',
       btnOk: {
@@ -94,6 +102,7 @@ export const vConfirm = {
       },
     } as ConfirmOptions, options)
 
+    debugger;
     init(title, message, op)
 
     return new Promise<boolean>((resolve, reject) => {
@@ -102,6 +111,7 @@ export const vConfirm = {
     })
   },
   delete: (title: string, message: string, options?: ConfirmOptions) => {
+    debugger;
     const op = Object.assign({
       iconTitle: 'mdi-delete',
       btnOk: {
@@ -114,6 +124,7 @@ export const vConfirm = {
       },
     } as ConfirmOptions, options)
 
+    debugger;
     init(title, message, op)
 
     return new Promise<boolean>((resolve, reject) => {
@@ -121,23 +132,4 @@ export const vConfirm = {
       state.reject = reject
     })
   },
-  // warning: (title: string, message: string, options?: ConfirmOptions) => {
-  //   const op = Object.assign({
-  //     btnOk: {
-  //       text: 'Yes',
-  //       color: 'warning',
-  //     },
-  //     btnCancel: {
-  //       text: 'Cancel',
-  //       color: 'secondary',
-  //     },
-  //   } as ConfirmOptions, options)
-
-  //   init(title, message, op)
-
-  //   return new Promise<boolean>((resolve, reject) => {
-  //     state.resolve = resolve
-  //     state.reject = reject
-  //   })
-  // },
 }
