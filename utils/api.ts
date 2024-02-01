@@ -3,8 +3,7 @@ import axios from 'axios'
 
 // const $g = useGlobalStore()
 
-const { getToken } = useLocalStorages
-const { baseUrl } = useConstant
+// const { baseUrl } = useConstant
 
 // create axios
 const _api = axios.create({
@@ -39,7 +38,7 @@ _api.interceptors.request.use((config: any) => {
 
   config.headers['Access-Control-Allow-Origin'] = '*'
   config.headers['Content-Type'] = 'application/json'
-  config.headers.Authorization = `Bearer ${getToken()}`
+  config.headers.Authorization = `Bearer ${useLocalStorages.getToken()}`
 
   return config
 }, err)
