@@ -8,7 +8,13 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: false },
   vite: {
+    build: {
+      chunkSizeWarningLimit: 5000,
+    },
     ssr: {
+      optimizeDeps: {
+        exclude: ['vuetify'],
+      },
       noExternal: ["vuetify"]
     }
   },
