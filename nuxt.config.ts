@@ -13,6 +13,9 @@ export default defineNuxtConfig({
     "vuetify-nuxt-module",
     "@pinia/nuxt"
   ],
+  build: {
+    transpile: ['vue-toastification']
+  },
   vuetify: {
     moduleOptions: {
       importComposables: true,
