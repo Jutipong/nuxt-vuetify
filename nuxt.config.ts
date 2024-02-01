@@ -53,29 +53,107 @@ export default defineNuxtConfig({
         },
         VBtn: {
           variant: 'flat',
-          rounded: '0',
         },
         VCard: {
+          variant: 'flat',
+          class: 'mb-3 pa-1',
           VBtn: {
             variant: 'flat',
-            rounded: '0',
+          },
+        },
+        VCardTitle: {},
+        VCardText: {
+          class: 'ma-1',
+          VSelect: {
+            clearable: true,
+            variant: 'outlined',
+            density: 'compact',
+            color: 'primary',
+            hideDetails: 'auto',
+            dirty: true,
+            itemTitle: 'text',
+            itemValue: 'id',
           },
         },
         VCardActions: {
+          class: 'mt-1 mr-2 ml-2',
           VBtn: {
             variant: 'flat',
-            rounded: '0',
+            class: 'pl-4 pr-4',
           },
         },
         VTextField: {
+          clearable: true,
           hideDetails: 'auto',
           density: 'compact',
+          color: 'primary',
           dirty: true,
           variant: 'outlined',
         },
+        VAutocomplete: {
+          variant: 'outlined',
+          density: 'compact',
+          color: 'primary',
+          hideDetails: 'auto',
+        },
+        VCombobox: {
+          variant: 'outlined',
+          density: 'compact',
+          color: 'primary',
+          hideDetails: 'auto',
+        },
+        VFileInput: {
+          variant: 'outlined',
+          density: 'compact',
+          color: 'primary',
+          hideDetails: 'auto',
+        },
+        VTextarea: {
+          variant: 'outlined',
+          density: 'compact',
+          color: 'primary',
+          hideDetails: 'auto',
+        },
+        VSwitch: {
+          color: 'primary',
+          hideDetails: 'auto',
+        },
         VDataTableServer: {
-          density: 'comfortable',
+          color: 'primary',
+          density: 'compact',
           hover: true,
+          VSelect: {
+            clearable: false,
+            variant: 'outlined',
+            density: 'compact',
+            itemTitle: 'title',
+            itemValue: 'value',
+          },
+        },
+        // VPagination: {
+        //   activeColor: 'error',
+        //   density: 'compact',
+        // },
+        VCheckbox: {
+          color: 'primary',
+          density: 'compact',
+          hideDetails: 'auto',
+        },
+        VRadioGroup: {
+          color: 'primary',
+          density: 'compact',
+          hideDetails: 'auto',
+        },
+        VRadio: {
+          density: 'compact',
+          hideDetails: 'auto',
+        },
+        VTabs: {
+          color: 'primary',
+        },
+        VChip: {
+          elevation: 0,
+          label: true,
         },
       },
     },
