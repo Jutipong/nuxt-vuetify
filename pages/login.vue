@@ -1,12 +1,9 @@
 <script lang="ts" setup>
 const { state, logIn } = useLoginStore()
-
 definePageMeta({ layout: "empty" })
-
-
 const user = ref({
   username: 'kminchelle',
-  password: '0    l elplR',
+  password: '0lelplR',
   visible: false,
 })
 </script>

@@ -1,14 +1,20 @@
 import type { UserLogin } from '@/types/auth'
-const { setToken, setUserLogin } = useLocalStorages
 
 export const useLoginStore = defineStore('login', () => {
   const state = reactive({ isLoading: false })
 
   async function logIn(username: string, password: string): Promise<void> {
+    debugger;
+
+
+    console.log(useConstant.baseUrl.api);
+
     state.isLoading = true
 
     const res = await api.post<UserLogin>('/auth/login', { username, password }, { isLoading: false })
 
+    debugger;
+    const { setToken, setUserLogin } = useLocalStorages
     setToken(res.token)
     setUserLogin(res)
 
