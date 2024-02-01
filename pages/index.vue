@@ -22,13 +22,7 @@ const items = [
 <template>
   <v-container>
     <v-timeline align="start">
-      <v-timeline-item
-        v-for="(item, i) in items"
-        :key="i"
-        :dot-color="item.color"
-        :icon="item.icon"
-        fill-dot
-      >
+      <v-timeline-item v-for="(item, i) in items" :key="i" :dot-color="item.color" :icon="item.icon" fill-dot>
         <v-card>
           <v-card-title class="text-h6" :class="[`bg-${item.color}`]">
             Lorem Ipsum Dolor
@@ -39,10 +33,7 @@ const items = [
               convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an
               salutandi sententiae.
             </p>
-            <v-btn
-              :color="item.color"
-              variant="outlined"
-            >
+            <v-btn :color="item.color" variant="outlined">
               Button
             </v-btn>
           </v-card-text>
