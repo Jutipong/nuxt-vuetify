@@ -12,7 +12,8 @@ const cruds2 = [{ title: 'Demo03', icon: 'mdi-chevron-right', to: '/demo03' }]
 </script>
 
 <template>
-  <v-navigation-drawer elevation="2" expand-on-hover>
+  <v-navigation-drawer v-model="layoutStore.state.drawer" elevation="2" expand-on-hover
+    :rail="!$vuetify.display.mobile && layoutStore.state.isRail">
     <v-list density="compact">
       <v-list-item prepend-avatar="https://randomuser.me/api/portraits/women/44.jpg" title="ABC" subtitle="abc@gmail.com">
         <template #append>
