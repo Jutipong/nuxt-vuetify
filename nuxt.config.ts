@@ -8,7 +8,13 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: false },
   vite: {
+    build: {
+      chunkSizeWarningLimit: 5000,
+    },
     ssr: {
+      optimizeDeps: {
+        exclude: ['vuetify'],
+      },
       noExternal: ["vuetify"]
     }
   },
@@ -23,9 +29,6 @@ export default defineNuxtConfig({
     transpile: ['vue-toastification']
   },
   vuetify: {
-    moduleOptions: {
-      importComposables: true,
-    },
     vuetifyOptions: {
       labComponents: true,
       icons: {
@@ -130,10 +133,6 @@ export default defineNuxtConfig({
             itemValue: 'value',
           },
         },
-        // VPagination: {
-        //   activeColor: 'error',
-        //   density: 'compact',
-        // },
         VCheckbox: {
           color: 'primary',
           density: 'compact',
