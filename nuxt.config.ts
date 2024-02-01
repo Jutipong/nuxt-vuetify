@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     layoutTransition: false
   },
   devtools: { enabled: false },
+  typescript: {
+    typeCheck: true
+  },
   vite: {
     build: {
       chunkSizeWarningLimit: 1000,
