@@ -23,9 +23,6 @@ export default defineNuxtConfig({
     transpile: ['vue-toastification']
   },
   vuetify: {
-    moduleOptions: {
-      importComposables: true,
-    },
     vuetifyOptions: {
       labComponents: true,
       icons: {
@@ -130,10 +127,6 @@ export default defineNuxtConfig({
             itemValue: 'value',
           },
         },
-        // VPagination: {
-        //   activeColor: 'error',
-        //   density: 'compact',
-        // },
         VCheckbox: {
           color: 'primary',
           density: 'compact',
