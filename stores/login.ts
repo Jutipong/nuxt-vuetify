@@ -17,7 +17,6 @@ export const useLoginStore = defineStore('login', () => {
     state.isLoading = false
 
     await navigateTo('/');
-    // router.push('/')
   }
 
   async function logOut(alertConfirm: boolean = true): Promise<void> {
@@ -36,7 +35,6 @@ export const useLoginStore = defineStore('login', () => {
     }
 
     await navigateTo('/login');
-    // router.push('/login')
   }
 
   return {

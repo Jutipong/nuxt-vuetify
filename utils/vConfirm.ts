@@ -1,12 +1,8 @@
 import { state, init } from '@/stores/hook/vConfirm'
 import type { ConfirmOptions } from '@/stores/hook/vConfirm';
-// ===========================================
-// ========== provie confirm dialog ==========
-// ===========================================
+
 export const vConfirm = {
   info: (title: string, message: string, options?: ConfirmOptions) => {
-
-    debugger;
 
     const op = Object.assign({
       btnOk: {
@@ -19,8 +15,6 @@ export const vConfirm = {
       },
     } as ConfirmOptions, options)
 
-    debugger;
-
     init(title, message, op)
 
     return new Promise<boolean>((resolve, reject) => {
@@ -29,8 +23,6 @@ export const vConfirm = {
     })
   },
   save: (title: string, message: string, options?: ConfirmOptions) => {
-
-    debugger;
 
     const op = Object.assign({
       iconTitle: 'mdi-content-save',
@@ -44,7 +36,6 @@ export const vConfirm = {
       },
     } as ConfirmOptions, options)
 
-    debugger;
     init(title, message, op)
 
     return new Promise<boolean>((resolve, reject) => {
@@ -53,7 +44,7 @@ export const vConfirm = {
     })
   },
   delete: (title: string, message: string, options?: ConfirmOptions) => {
-    debugger;
+
     const op = Object.assign({
       iconTitle: 'mdi-delete',
       btnOk: {
@@ -66,7 +57,7 @@ export const vConfirm = {
       },
     } as ConfirmOptions, options)
 
-    debugger;
+
     init(title, message, op)
 
     return new Promise<boolean>((resolve, reject) => {
