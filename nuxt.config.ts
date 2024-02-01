@@ -3,11 +3,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    keepalive: true,
     pageTransition: false,
     layoutTransition: false
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   imports: {
     dirs: ['stores', 'utils', 'utils/constants'],
   },
@@ -16,6 +15,9 @@ export default defineNuxtConfig({
     "@pinia/nuxt"
   ],
   vuetify: {
+    moduleOptions: {
+      importComposables: true,
+    },
     vuetifyOptions: {
       icons: {
         defaultSet: 'mdi',
