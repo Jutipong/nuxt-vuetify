@@ -12,8 +12,8 @@
 
 <template>
   <v-app>
-    <LayoutHeader />
-    <LayoutNavigation />
+    <LayoutsHeader />
+    <LayoutsNavigation />
     <v-main>
       <!-- <v-container fluid> -->
       <slot></slot>

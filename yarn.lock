@@ -3227,6 +3227,11 @@ local-pkg@^0.5.0:
     mlly "^1.4.2"
     pkg-types "^1.0.3"
 
+localstorage-slim@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/localstorage-slim/-/localstorage-slim-2.7.0.tgz#a8313d1e95adfc6edb5b66ec8fe91233fe9d8fa7"
+  integrity sha512-velxCZhb0mODaD9noe4pu3+OYnMKC66itqDqHMRsVpXKAJYU2+cUX09KRxoZ/nlVwitVgjlG2BZSEaP6RPJmgw==
+
 lodash.defaults@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
@@ -5315,6 +5320,11 @@ vue-router@^4.2.5:
   integrity sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==
   dependencies:
     "@vue/devtools-api" "^6.5.0"
+
+vue-toastification@2.0.0-rc.5:
+  version "2.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/vue-toastification/-/vue-toastification-2.0.0-rc.5.tgz#92798604d806ae473cfb76ed776fae294280f8f8"
+  integrity sha512-q73e5jy6gucEO/U+P48hqX+/qyXDozAGmaGgLFm5tXX4wJBcVsnGp4e/iJqlm9xzHETYOilUuwOUje2Qg1JdwA==
 
 vue@^3.4.15:
   version "3.4.15"
