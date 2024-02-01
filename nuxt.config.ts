@@ -1,11 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // ssr: false,
+  ssr: false,
   app: {
     pageTransition: false,
     layoutTransition: false
   },
   devtools: { enabled: false },
+  vite: {
+    ssr: {
+      noExternal: ["vuetify"]
+    }
+  },
   imports: {
     dirs: ['stores', 'utils', 'utils/constants'],
   },
