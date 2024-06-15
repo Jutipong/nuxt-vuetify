@@ -13,3 +13,8 @@ export const useProductStore = defineStore('product', () => {
 
   return { state }
 })
+
+
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useProductStore, import.meta.hot))
+}
