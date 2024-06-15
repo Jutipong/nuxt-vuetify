@@ -6,15 +6,15 @@ export default defineNuxtConfig({
     pageTransition: false,
     layoutTransition: false
   },
-  devtools: { enabled: false },
-  typescript: {
-    typeCheck: true
-  },
-  vite: {
-    build: {
-      chunkSizeWarningLimit: 1000,
-    },
-  },
+  // devtools: { enabled: false },
+  // typescript: {
+  //   typeCheck: true
+  // },
+  // vite: {
+  //   build: {
+  //     chunkSizeWarningLimit: 1000,
+  //   },
+  // },
   imports: {
     dirs: [
       'stores',
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       'utils/constants'
     ],
   },
-  modules: ["vuetify-nuxt-module", "@pinia/nuxt", 'nuxt-lodash'],
+  modules: ["vuetify-nuxt-module", '@pinia/nuxt'],
   build: {
     transpile: ['vue-toastification']
   },

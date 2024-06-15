@@ -6,7 +6,6 @@
         "dbaeumer.vscode-eslint",
         "antfu.file-nesting",
         "chrisbibby.hide-node-modules",
-        "akamud.vscode-javascript-snippet-pack",
         "lukas-tr.materialdesignicons-intellisense",
         "pkief.material-icon-theme",
         "idered.npm",
@@ -14,8 +13,6 @@
         "travis.simple-dark",
         "vue.vscode-typescript-vue-plugin",
         "markosth09.color-picker",
-        "exer7um.vue-3-vscode-snippets",
-        "vue.volar",
-        "vuetifyjs.vuetify-vscode"
+        "vue.volar"
     ]
 }
